@@ -32,8 +32,9 @@ if (cont == 0) {
 } else {
     console.log(userMail, 'Ha l accesso al sito');
 }
-const result = document.getElementById("email");
-result.innerHTML = `Email: ${userMail}`;
+//Stampo l'email in pagina
+const resultEmail = document.getElementById("email");
+resultEmail.innerHTML = `Email: ${userMail}`;
 /*
 Gioco dei Dadi
 
@@ -48,13 +49,24 @@ const cpuNumber = Math.floor(Math.random() * 6 + 1);
 //Genero un numero random da 1 a 6 per l'utente
 const userNumber = Math.floor(Math.random() * 6 + 1);
 //Controllo qual è più alto e gestisco eventuali pareggi
+let resultDiceWinner = '';
 if (cpuNumber == userNumber) {
+    resultDiceWinner = 'PAREGGIO';
     console.log('PAREGGIO');
 } else if (cpuNumber > userNumber) {
+    resultDiceWinner = 'LA CPU HA VINTO !';
     console.log('CPU HA VINTO !')
 } else if (cpuNumber < userNumber) {
+    resultDiceWinner = 'L UTENTE HA VINTO !';
     console.log('L UTENTE HA VINTO !')
 }
 //Stampo in console i tiri del dado e del risultato
 console.log('LA CPU HA FATTO', cpuNumber);
 console.log('L UTENTE HA FATTO', userNumber);
+//Stampo i risultati in pagina
+const resultCpuDice = document.getElementById("dice");
+resultCpuDice.innerHTML = `<li>Numero uscito del computer: ${cpuNumber}</li>`;
+const resultUserDice = document.getElementById("dice");
+resultUserDice.innerHTML = `<li>Numero uscito dell utente: ${userNumber}</li>`;
+const resultWinner = document.getElementById("dice");
+resultWinner.innerHTML = ` Il risultato è: ${resultDiceWinner}`;
