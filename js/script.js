@@ -11,3 +11,7 @@ MAIL
 // Creo un array di email
 let emails = ['alberto@gmail.com', 'bertoldo@yahoo.com', 'giulio@yahoo.com'];
 console.log(emails);
+
+//Chiedo all'utente la sua email
+userMail = prompt('Inserisci la tua email');
+console.log(userMail);
