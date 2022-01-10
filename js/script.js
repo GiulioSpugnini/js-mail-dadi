@@ -30,3 +30,12 @@ if (cont == 0) {
     alert("Mi dispiace, la tua email non è abilitata all'accesso per questo sito");
     console.log(userMail, 'Non ha l accesso al sito');
 }
+
+/*
+Gioco dei Dadi
+
+1.Genero un numero random da 1 a 6 per cpu
+2.Genero un numero random da 1 a 6 per l'utente
+3.Controllo qual è più alto e gestisco eventuali pareggi
+4.Stampo in console i tiri del dado e del risultato
+*/
