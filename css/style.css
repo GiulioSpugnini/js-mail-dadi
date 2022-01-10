@@ -1,7 +1,69 @@
 #email {
-    background-color: red;
+    background-color: green;
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: royalblue;
+    font-size: 40px;
 }
 
 #dice {
-    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dice li {
+    list-style: none;
+    line-height: 200px;
+    color: white;
+    text-align: center;
+}
+
+.winner {
+    animation: rainbow 1s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+    100%,
+    0% {
+        color: rgb(255, 0, 0);
+    }
+    8% {
+        color: rgb(255, 127, 0);
+    }
+    16% {
+        color: rgb(255, 255, 0);
+    }
+    25% {
+        color: rgb(127, 255, 0);
+    }
+    33% {
+        color: rgb(0, 255, 0);
+    }
+    41% {
+        color: rgb(0, 255, 127);
+    }
+    50% {
+        color: rgb(0, 255, 255);
+        transform: scale(0.9);
+    }
+    58% {
+        color: rgb(0, 127, 255);
+    }
+    66% {
+        color: rgb(0, 0, 255);
+    }
+    75% {
+        color: rgb(127, 0, 255);
+    }
+    83% {
+        color: rgb(255, 0, 255);
+    }
+    91% {
+        color: rgb(255, 0, 127);
+    }
 }

@@ -47,20 +47,20 @@ let result = '';
 const resultDice = document.getElementById("dice");
 //Genero un numero random da 1 a 6 per cpu
 const cpuNumber = Math.floor(Math.random() * 6 + 1);
-result += (`<li>Numero uscito del computer: ${cpuNumber}</li>`);
+result += (`<li class="col-12">Numero uscito del computer: ${cpuNumber}</li>`);
 //Genero un numero random da 1 a 6 per l'utente
 const userNumber = Math.floor(Math.random() * 6 + 1);
-result += (`<li>Numero uscito dell utente: ${userNumber}</li>`);
+result += (`<li class="col-12">Numero uscito dell utente: ${userNumber}</li>`);
 //Controllo qual è più alto e gestisco eventuali pareggi
 
 if (cpuNumber == userNumber) {
-    result += '<li>PAREGGIO</li>';
+    result += '<li class="col-12 winner">PAREGGIO</li>';
     console.log('PAREGGIO');
 } else if (cpuNumber > userNumber) {
-    result += '<li>LA CPU HA VINTO !</li>';
+    result += '<li class="col-12 winner">LA CPU HA VINTO !</li>';
     console.log('CPU HA VINTO !')
 } else if (cpuNumber < userNumber) {
-    result += '<li>L UTENTE HA VINTO !</li>';
+    result += '<li class="col-12 winner">L UTENTE HA VINTO !</li>';
     console.log('L UTENTE HA VINTO !')
 }
 //Stampo in console i tiri del dado e del risultato
