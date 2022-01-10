@@ -32,7 +32,8 @@ if (cont == 0) {
 } else {
     console.log(userMail, 'Ha l accesso al sito');
 }
-
+const result = document.getElementById("email");
+result.innerHTML = `Email: ${userMail}`;
 /*
 Gioco dei Dadi
 
