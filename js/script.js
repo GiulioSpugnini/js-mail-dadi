@@ -13,5 +13,8 @@ let emails = ['alberto@gmail.com', 'bertoldo@yahoo.com', 'giulio@yahoo.com'];
 console.log(emails);
 
 //Chiedo all'utente la sua email
-userMail = prompt('Inserisci la tua email');
+userMail = prompt("Inserisci la tua email");
 console.log(userMail);
+if (!isNaN(userMail) || userMail == null) {
+    alert("Hai inserito l'input sbagliato, ti prego di riprovare")
+}
