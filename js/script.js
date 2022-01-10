@@ -41,9 +41,9 @@ Gioco dei Dadi
 */
 
 //Genero un numero random da 1 a 6 per cpu
-const cpuNumber = Math.random(6);
+const cpuNumber = Math.floor(Math.random() * 6 + 1);
 //Genero un numero random da 1 a 6 per l'utente
-const userNumber = Math.random(6);
+const userNumber = Math.floor(Math.random() * 6 + 1);
 //Controllo qual è più alto e gestisco eventuali pareggi
 if (cpuNumber == userNumber) {
     console.log('PAREGGIO');
@@ -52,3 +52,6 @@ if (cpuNumber == userNumber) {
 } else if (cpuNumber < userNumber) {
     console.log('L UTENTE HA VINTO !')
 }
+//Stampo in console i tiri del dado e del risultato
+console.log('LA CPU HA FATTO', cpuNumber);
+console.log('L UTENTE HA FATTO', userNumber);
