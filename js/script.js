@@ -29,6 +29,8 @@ for (let i = 0; i < emails.length; i++) {
 if (cont == 0) {
     alert("Mi dispiace, la tua email non è abilitata all'accesso per questo sito");
     console.log(userMail, 'Non ha l accesso al sito');
+} else {
+    console.log(userMail, 'Ha l accesso al sito');
 }
 
 /*
